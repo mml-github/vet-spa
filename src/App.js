@@ -8,7 +8,9 @@ class App extends Component {
   render(){
     return (
       <div>
-        HI
+       Welcome
+
+       This will have a navbar and links
       </div>
     )
   }
