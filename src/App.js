@@ -16,7 +16,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavBar>
-
+          <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
           </NavBar>
         </div>
       </BrowserRouter>
