@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 
+import Navbar from './components/navbar';
+import Home from './components/home';
+import ActorsContainer from './components/actorsContainer';
+import Actress from './components/actress';
+import Films from './components/films';
+
 
 class App extends Component {
 
@@ -10,7 +16,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavBar>
-            
+
           </NavBar>
         </div>
       </BrowserRouter>
