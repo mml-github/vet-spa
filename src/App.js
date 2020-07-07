@@ -19,7 +19,7 @@ class App extends Component {
   
           <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
           <Route path="/actors/" render={() => <ActorsContainer title="Best Actors" />} />
-          
+          <Route path="/films" render={() => <Films title="Best Films" />} />
           </NavBar>
         </div>
       </BrowserRouter>
