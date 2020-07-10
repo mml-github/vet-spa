@@ -5,6 +5,16 @@ import Actor from './actor';
 import Actors from './actors';
 import { Route} from 'react-router-dom';
  
-//const ActorsContainer
+const ActorsContainer = (props) => {
+    let actorUrl = ActorList.map((actor,i) => {
+        return (
+          <Route key={i} path={`/actors/${actor.url}`} render={() => <Actor name={actor.name} image={actor.profile_img} details={actor.description}/>} />
+        );
+      });
+
+    return (
+
+    );
+}
 
 export default ActorsContainer;
