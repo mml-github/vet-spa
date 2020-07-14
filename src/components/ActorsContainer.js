@@ -13,7 +13,11 @@ const ActorsContainer = (props) => {
       });
 
     return (
-
+        <React.Fragment>
+          <Route exact path="/actors" render={() => <Actors title="Best Actors"/>} />
+          {actorUrl}
+          {/* <Route path="/actors/hello" render={() => <Actor />} /> */}
+        </React.Fragment>
     );
 }
 
