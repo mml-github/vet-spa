@@ -7,7 +7,7 @@ const Actress = (props) => {
       return (
         <div className="actor-container">
           <Link to={`/actors/${actress.url}`}><div className="actor-image" style={{ backgroundImage: "url(" + actress.img_src + ")" }}></div></Link>
-          <h3>{actress.name}</h3>
+ 
         </div>
       );
     });
