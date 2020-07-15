@@ -1,15 +1,28 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
+
+import Navbar from './components/NavBar';
+import Home from './components/Home';
+import ActorsContainer from './components/ActorsContainer';
+import Actress from './components/Actress';
+import Films from './components/Films';
 
 
 class App extends Component {
 
   render(){
     return (
-      <div>
-        HI
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <NavBar>
+  
+          <Route exact path="/" render={() => <Home title="Oscar Winners" />} />
+          <Route path="/actors/" render={() => <ActorsContainer title="Best Actors" />} />
+          <Route path="/films" render={() => <Films title="Best Films" />} />
+          </NavBar>
+        </div>
+      </BrowserRouter>
     )
   }
 
