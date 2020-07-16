@@ -13,7 +13,13 @@ const Actress = (props) => {
     });
 
     return (
-
+        <div className="main-content">
+        <div><Link className="back" to="/">BACK</Link></div>
+        <h2>{props.title}</h2>
+        <div className="container">
+          {actress}
+        </div>
+      </div>
     );
 }
 
