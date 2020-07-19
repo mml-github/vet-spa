@@ -14,7 +14,12 @@ const Films = (props) => {
       );
     });
     return (
-
+        <div className="main-content">
+        <h2>{props.title}</h2>
+        <div className="container">
+          {films}    
+        </div>
+      </div>
     );
 }
 
